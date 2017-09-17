@@ -1,4 +1,4 @@
-FROM rocker/verse:latest
+FROM rocker/verse:3.4.1
 
 RUN install2.r --error --deps TRUE \
     blogdown \
