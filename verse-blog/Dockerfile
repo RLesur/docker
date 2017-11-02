@@ -10,7 +10,6 @@ RUN apt-get update \
 
 RUN install2.r --error --deps TRUE \
     blogdown \
-    magick \
     plot3D \
     animation  \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
