@@ -6,12 +6,13 @@ RUN apt-get update \
   mesa-common-dev \
   libglu1-mesa-dev \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/ \
-  && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
+  && rm -rf /var/lib/apt/lists/
 
 RUN install2.r --error --deps TRUE \
     blogdown \
+    magick \
     plot3D \
-    animation \
+    animation  \
+  && rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
   && Rscript -e "blogdown::install_hugo()"
 
