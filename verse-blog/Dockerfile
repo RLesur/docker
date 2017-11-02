@@ -5,12 +5,15 @@ RUN apt-get update \
   r-cran-rgl \
   mesa-common-dev \
   libglu1-mesa-dev \
+  freeglut3-dev \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
 RUN install2.r --error --deps TRUE \
     blogdown \
     plot3D \
+    rgl \
+    plot3Drgl \
     animation  \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
   && Rscript -e "blogdown::install_hugo()"
