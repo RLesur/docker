@@ -9,6 +9,8 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
+RUN Rscript -e "devtools::install_github('hadley/emo')"
+
 RUN install2.r --error --deps TRUE \
     blogdown \
     plot3D \
