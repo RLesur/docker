@@ -1,7 +1,6 @@
 FROM rocker/verse:3.4.1
 
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
   r-cran-rgl \
   mesa-common-dev \
   libglu1-mesa-dev \
@@ -20,3 +19,5 @@ RUN install2.r --error --deps TRUE \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
   && Rscript -e "blogdown::install_hugo()"
 
+RUN mkdir /home/rstudio/bin \
+  && cp /root/bin/hugo /home/rstudio/bin/
