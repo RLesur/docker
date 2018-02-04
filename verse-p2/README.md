@@ -1,1 +1,1 @@
-## Rocker/vers with pandoc 2
+## Rocker/verse with pandoc 2
