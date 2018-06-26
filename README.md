@@ -10,5 +10,5 @@ The [`verse-blog`](https://hub.docker.com/r/rlesur/verse-blog/) image:
 - install [`Hugo`](https://gohugo.io/).
 
 ## versexar
-The [`verse-blog`](https://hub.docker.com/r/rlesur/versexar/) image:
+The [`versexar`](https://hub.docker.com/r/rlesur/versexar/) image:
 - add [`xaringan`] and [`webshot`] to the rocker/verse:3.5.0 image
