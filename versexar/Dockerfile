@@ -12,3 +12,6 @@ RUN install2.r --error --deps TRUE \
     webshot \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
   && Rscript -e "webshot::install_phantomjs()"
+
+RUN mkdir /home/rstudio/bin \
+  && cp /root/bin/phantomjs /home/rstudio/bin/
