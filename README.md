@@ -11,4 +11,4 @@ The [`verse-blog`](https://hub.docker.com/r/rlesur/verse-blog/) image:
 
 ## versexar
 The [`versexar`](https://hub.docker.com/r/rlesur/versexar/) image:
-- add [`xaringan`] and [`webshot`] to the rocker/verse:3.5.0 image
+- add `xaringan` and `webshot` to the rocker/verse:3.5.0 image
