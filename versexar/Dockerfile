@@ -26,5 +26,3 @@ RUN mkdir -p /usr/share/fonts/truetype/yanonekaffeesatz \
   && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Light.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Light.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Regular.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Bold.ttf?raw=true"
-
-  
