@@ -97,7 +97,7 @@ RUN mkdir -p /usr/share/fonts/truetype/opensans \
   && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Light.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Light.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/opensans/OpenSans-LightItalic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-LightItalic.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Regular.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Regular.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Semibold.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Semibold.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-SemiboldItalic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-semiboldItalic.ttf?raw=true"
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-SemiBold.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-SemiBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-SemiBoldItalic.ttf "https://github.com/google/fonts/raw/4e24bf1805f1526cd1ce3e39447d5f8e6f1f6b67/apache/opensans/OpenSans-SemiboldItalic.ttf"
 
 
