@@ -18,3 +18,9 @@ RUN install2.r --error --deps TRUE \
 
 RUN mkdir /home/rstudio/bin \
   && cp /root/bin/phantomjs /home/rstudio/bin/
+
+RUN mkdir -p /usr/share/fonts/truetype/yanonekaffeesatz \
+  && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-ExtraLight.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-ExtraLight.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Light.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Regular.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Bold.ttf?raw=true"
