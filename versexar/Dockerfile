@@ -1,11 +1,13 @@
 FROM rocker/verse:3.5.0
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
+  && apt-get install -y \
   bzip2 \
   lbzip2 \
   curl \
   gnupg \
+  gnupg2 \
+  gnupg1 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
