@@ -33,5 +33,5 @@ RUN mkdir -p /usr/share/fonts/truetype/sourcecodepro \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Light.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Light.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Medium.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Medium.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Regular.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Semibold.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Semibold.ttf?raw=true"
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Semibold.ttf "https://github.com/google/fonts/raw/18b5208c2a778d85c1312ec3b18b1d3b822cc51a/ofl/sourcecodepro/SourceCodePro-Semibold.ttf"
   
