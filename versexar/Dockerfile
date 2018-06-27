@@ -149,3 +149,4 @@ RUN mkdir -p /usr/share/fonts/truetype/droidserif \
 
 RUN mkdir -p /usr/share/fonts/truetype/droidsans \
   && wget -O /usr/share/fonts/truetype/droidsans/DroidSans-Regular.ttf "https://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciC3USBnSvpkopQaUR-2r7iU.ttf"
+
