@@ -9,7 +9,7 @@ RUN apt-get update \
   gnupg2 \
   gnupg1 \
   fonts-droid \
-  font-droid-fallback \
+  fonts-droid-fallback \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
