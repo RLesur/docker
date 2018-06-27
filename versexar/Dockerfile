@@ -17,10 +17,20 @@ RUN install2.r --error --deps TRUE \
 RUN mkdir /home/rstudio/bin \
   && cp /root/bin/phantomjs /home/rstudio/bin/
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
+RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - \
   && sudo apt-get install -y nodejs \
-  && sudo apt-get install -y build-essential \
-  && useradd node \
+  && sudo apt-get install -y build-essential
+
+RUN useradd node \
   && mkdir -p /usr/src/app \
   && chown node:node /usr/src/app \
-  && npm install -g decktape
+  && mkdir -p /usr/lib/node_modules \
+  && chown node:node /usr/lib/node_modules \
+  && mkdir /home/node \
+  && chown node:node /home/node
+
+RUN chmod -R 777 /usr/bin
+
+USER node
+
+RUN npm install -g decktape
