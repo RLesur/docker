@@ -35,3 +35,69 @@ RUN mkdir -p /usr/share/fonts/truetype/sourcecodepro \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Regular.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Semibold.ttf "https://github.com/google/fonts/raw/18b5208c2a778d85c1312ec3b18b1d3b822cc51a/ofl/sourcecodepro/SourceCodePro-Semibold.ttf"
   
+RUN mkdir -p /usr/share/fonts/truetype/parisienne \
+  && wget -O /usr/share/fonts/truetype/parisienne/Parisienne-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/parisienne/Parisienne-Regular.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/exo \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Black.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Black.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-BlackItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-BlackItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-BoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-ExtraBold.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-ExtraBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-ExtraBoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-ExtraBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-ExtraLight.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-ExtraLight.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-ExtraLightItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-ExtraLightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Italic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Light.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-LightItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-LightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Medium.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Medium.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-MediumItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-MediumItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Regular.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-SemiBold.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-SemiBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-SemiBoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-SemiBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-Thin.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-Thin.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/exo/Exo-ThinItalic.ttf "https://github.com/google/fonts/blob/master/ofl/exo/Exo-ThinItalic.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/philosopher \
+  && wget -O /usr/share/fonts/truetype/philosopher/Philosopher-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/philosopher/Philosopher-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/philosopher/Philosopher-BoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/philosopher/Philosopher-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/philosopher/Philosopher-Italic.ttf "https://github.com/google/fonts/blob/master/ofl/philosopher/Philosopher-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/philosopher/Philosopher-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/philosopher/Philosopher-Regular.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/lato \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Black.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Black.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-BlackItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-ExtraBold.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-ExtraBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-ExtraBoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-ExtraBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-ExtraLight.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-ExtraLight.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-ExtraLightItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-ExtraLightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Italic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Light.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-LightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Medium.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Medium.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-MediumItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Regular.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-SemiBold.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-SemiBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-SemiBoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-SemiBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-Thin.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-Thin.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf "https://github.com/google/fonts/blob/master/ofl/lato/Lato-ThinItalic.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/inconsolata \
+  && wget -O /usr/share/fonts/truetype/inconsolata/Inconsolata-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/inconsolata/Inconsolata-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/inconsolata/Inconsolata-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/inconsolata/Inconsolata-Regular.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/opensans \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Bold.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-BoldItalic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-ExtraBold.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-ExtraBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-ExtraBoldItalic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-ExtraBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Italic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Light.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-LightItalic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-LightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Regular.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Regular.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-Semibold.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Semibold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/opensans/OpenSans-SemiboldItalic.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-semiboldItalic.ttf?raw=true"
+
+
