@@ -100,4 +100,51 @@ RUN mkdir -p /usr/share/fonts/truetype/opensans \
   && wget -O /usr/share/fonts/truetype/opensans/OpenSans-SemiBold.ttf "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-SemiBold.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/opensans/OpenSans-SemiBoldItalic.ttf "https://github.com/google/fonts/raw/4e24bf1805f1526cd1ce3e39447d5f8e6f1f6b67/apache/opensans/OpenSans-SemiboldItalic.ttf"
 
+RUN mkdir -p /usr/share/fonts/truetype/firasans \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Black.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Black.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-BlackItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-BlackItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-BoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-ExtraBold.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-ExtraBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-ExtraBoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-ExtraBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-ExtraLight.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-ExtraLight.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-ExtraLightItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-ExtraLightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Italic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Light.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-LightItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-LightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Medium.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Medium.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-MediumItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-MediumItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Regular.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-SemiBold.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-SemiBold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-SemiBoldItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-SemiBoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-Thin.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-Thin.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firasans/FiraSans-ThinItalic.ttf "https://github.com/google/fonts/blob/master/ofl/firasans/FiraSans-ThinItalic.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/firacode \
+  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Bold.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Light.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Medium.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Medium.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Regular.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Regular.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Retina.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Retina.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/robotocondensed \
+  && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-Bold.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-BoldItalic.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-Italic.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-Light.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-Light.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-LightItalic.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-LightItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-Regular.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-Regular.ttf?raw=true"
+
+RUN mkdir -p /usr/share/fonts/truetype/ubuntumono \
+  && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-Bold.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-BoldItalic.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-Italic.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-Regular.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-Regular.ttf?raw=true"
+  
+RUN mkdir -p /usr/share/fonts/truetype/droidserif \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Bold.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-BoldItalic.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-BoldItalic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Italic.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-Italic.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Regular.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-Regular.ttf?raw=true"
+
 
