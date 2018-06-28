@@ -155,10 +155,3 @@ RUN mkdir -p /usr/share/fonts/truetype/lucidaconsole \
   && wget -O /usr/share/fonts/truetype/lucidaconsole/LucidaConsole-Regular.ttf "https://github.com/elliotwoods/kimchiandchips/raw/master/oF/apps%20VS/PC%20Encode%203.0/bin/data/Lucida%20Console.ttf"
 
 RUN fc-cache -fv
-
-# Remove pandoc symlinks and install pandoc 2
-RUN rm /usr/local/bin/pandoc \
-  && rm /usr/local/bin/pandoc-citeproc \
-  && wget -O pandoc-2.2.1-1-amd64.deb https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb \
-  && dpkg -i pandoc-2.2.1-1-amd64.deb \
-  && rm pandoc-2.2.1-1-amd64.deb
