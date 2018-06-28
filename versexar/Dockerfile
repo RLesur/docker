@@ -154,4 +154,11 @@ RUN mkdir -p /usr/share/fonts/truetype/droidsans \
 RUN mkdir -p /usr/share/fonts/truetype/lucidaconsole \
   && wget -O /usr/share/fonts/truetype/lucidaconsole/LucidaConsole-Regular.ttf "https://github.com/elliotwoods/kimchiandchips/raw/master/oF/apps%20VS/PC%20Encode%203.0/bin/data/Lucida%20Console.ttf"
 
+# Add Source Code Pro font type 1
+RUN wget http://mirrors.ctan.org/install/fonts/sourcecodepro.tds.zip \
+  && mkdir sourcecodepro \
+  && unzip sourcecodepro.tds.zip -d sourcecodepro \
+  && cp -R sourcecodepro/fonts/* /usr/share/fonts \
+  && rm -rf sourcecodepro
+
 RUN fc-cache -fv
