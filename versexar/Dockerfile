@@ -126,7 +126,17 @@ RUN mkdir -p /usr/share/fonts/truetype/firacode \
   && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Light.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Light.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Medium.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Medium.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Regular.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Regular.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Retina.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Retina.ttf?raw=true"
+  && wget -O /usr/share/fonts/truetype/firacode/FiraCode-Retina.ttf "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-Retina.ttf?raw=true" \
+  && mkdir -p /usr/share/fonts/misc \
+  && mkdir -p /usr/share/fonts/misc/firacode \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Bold.woff "https://github.com/tonsky/FiraCode/blob/master/distr/woff/FiraCode-Bold.woff?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Light.woff "https://github.com/tonsky/FiraCode/blob/master/distr/woff/FiraCode-Light.woff?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Medium.woff "https://github.com/tonsky/FiraCode/blob/master/distr/woff/FiraCode-Medium.woff?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Regular.woff "https://github.com/tonsky/FiraCode/blob/master/distr/woff/FiraCode-Regular.woff?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Bold.woff2 "https://github.com/tonsky/FiraCode/blob/master/distr/woff2/FiraCode-Bold.woff2?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Light.woff2 "https://github.com/tonsky/FiraCode/blob/master/distr/woff2/FiraCode-Light.woff2?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Medium.woff2 "https://github.com/tonsky/FiraCode/blob/master/distr/woff2/FiraCode-Medium.woff2?raw=true" \
+  && wget -O /usr/share/fonts/misc/firacode/FiraCode-Regular.woff2 "https://github.com/tonsky/FiraCode/blob/master/distr/woff2/FiraCode-Regular.woff2?raw=true"
 
 RUN mkdir -p /usr/share/fonts/truetype/robotocondensed \
   && wget -O /usr/share/fonts/truetype/robotocondensed/RobotoCondensed-Bold.ttf "https://github.com/google/fonts/blob/master/apache/robotocondensed/RobotoCondensed-Bold.ttf?raw=true" \
