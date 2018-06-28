@@ -9,6 +9,7 @@ RUN apt-get update \
   gnupg2 \
   gnupg1 \
   fonts-droid-fallback \
+  fonts-noto \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
