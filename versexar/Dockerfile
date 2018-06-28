@@ -159,6 +159,7 @@ RUN wget http://mirrors.ctan.org/install/fonts/sourcecodepro.tds.zip \
   && mkdir sourcecodepro \
   && unzip sourcecodepro.tds.zip -d sourcecodepro \
   && cp -R sourcecodepro/fonts/* /usr/share/fonts \
-  && rm -rf sourcecodepro
+  && rm -rf sourcecodepro \
+  && rm sourcecodepro.tds.zip
 
 RUN fc-cache -fv
