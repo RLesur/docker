@@ -158,13 +158,13 @@ RUN mkdir -p /usr/share/fonts/truetype/ubuntumono \
   && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-Regular.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-Regular.ttf?raw=true"
   
 RUN mkdir -p /usr/share/fonts/truetype/droidserif \
-  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Bold.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-Bold.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-BoldItalic.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-BoldItalic.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Italic.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-Italic.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Regular.ttf "https://github.com/jenskutilek/free-fonts/blob/master/Droid/Droid Serif/TTF/DroidSerif-Regular.ttf?raw=true"
-
-RUN mkdir -p /usr/share/fonts/truetype/droidsans \
-  && wget -O /usr/share/fonts/truetype/droidsans/DroidSans-Regular.ttf "https://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciC3USBnSvpkopQaUR-2r7iU.ttf"
+  && mkdir -p /usr/share/fonts/truetype/droidsans \
+  && wget http://mirrors.ctan.org/fonts/droid.zip \
+  && unzip droid.zip -d . \
+  && cp droid/fonts/truetype/public/droid/DroidSans*.ttf /usr/share/fonts/truetype/droidsans \
+  && cp droid/fonts/truetype/public/droid/DroidSerif*.ttf /usr/share/fonts/truetype/droidserif \
+  && rm -rf droid \
+  && rm droid.zip
 
 RUN mkdir -p /usr/share/fonts/truetype/lucidaconsole \
   && wget -O /usr/share/fonts/truetype/lucidaconsole/LucidaConsole-Regular.ttf "https://github.com/elliotwoods/kimchiandchips/raw/master/oF/apps%20VS/PC%20Encode%203.0/bin/data/Lucida%20Console.ttf"
@@ -182,4 +182,3 @@ RUN fc-cache -fv
 RUN wget -O google-chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" \
   && dpkg -i google-chrome.deb \
   && rm google-chrome.deb
-
