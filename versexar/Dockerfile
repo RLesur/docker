@@ -173,3 +173,8 @@ RUN wget http://mirrors.ctan.org/install/fonts/sourcecodepro.tds.zip \
   && rm sourcecodepro.tds.zip
 
 RUN fc-cache -fv
+
+RUN wget -O google-chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" \
+  && dpkg -i google-chrome.deb \
+  && rm google-chrome.deb
+
