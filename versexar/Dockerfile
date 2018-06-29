@@ -34,7 +34,7 @@ RUN mkdir -p /usr/share/fonts/truetype/yanonekaffeesatz \
 
 RUN mkdir -p /usr/share/fonts/truetype/sourcecodepro \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Black.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Black.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Bold.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Bold.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cv.ttf" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-ExtraLight.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-ExtraLight.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Light.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Light.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Medium.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Medium.ttf?raw=true" \
