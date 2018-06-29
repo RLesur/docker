@@ -8,6 +8,7 @@ RUN apt-get update \
   gnupg \
   gnupg2 \
   gnupg1 \
+  libfontconfig1 \
   fonts-droid-fallback \
   fonts-noto \
   # needed for Chrome:
