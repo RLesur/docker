@@ -157,14 +157,18 @@ RUN mkdir -p /usr/share/fonts/truetype/ubuntumono \
   && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-Italic.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-Italic.ttf?raw=true" \
   && wget -O /usr/share/fonts/truetype/ubuntumono/UbuntuMono-Regular.ttf "https://github.com/google/fonts/blob/master/ufl/ubuntumono/UbuntuMono-Regular.ttf?raw=true"
   
-RUN mkdir -p /usr/share/fonts/truetype/droidserif \
-  && mkdir -p /usr/share/fonts/truetype/droidsans \
+RUN mkdir -p /usr/share/fonts/truetype/droidsans \
   && wget http://mirrors.ctan.org/fonts/droid.zip \
   && unzip droid.zip -d . \
   && cp droid/fonts/truetype/public/droid/DroidSans*.ttf /usr/share/fonts/truetype/droidsans \
-  && cp droid/fonts/truetype/public/droid/DroidSerif*.ttf /usr/share/fonts/truetype/droidserif \
   && rm -rf droid \
   && rm droid.zip
+
+RUN mkdir -p /usr/share/fonts/truetype/droidserif \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Regular.ttf "https://fonts.gstatic.com/s/droidserif/v8/tDbI2oqRg1oM3QBjjcaDkOr9rAA.ttf" \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Bold.ttf "https://fonts.gstatic.com/s/droidserif/v8/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwQ.ttf" \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-Italic.ttf "https://fonts.gstatic.com/s/droidserif/v8/tDbK2oqRg1oM3QBjjcaDkOr4nAfcGw.ttf" \
+  && wget -O /usr/share/fonts/truetype/droidserif/DroidSerif-BoldItalic.ttf "https://fonts.gstatic.com/s/droidserif/v8/tDbX2oqRg1oM3QBjjcaDkOr4lLz5CwOnTQ.ttf"
 
 RUN mkdir -p /usr/share/fonts/truetype/lucidaconsole \
   && wget -O /usr/share/fonts/truetype/lucidaconsole/LucidaConsole-Regular.ttf "https://github.com/elliotwoods/kimchiandchips/raw/master/oF/apps%20VS/PC%20Encode%203.0/bin/data/Lucida%20Console.ttf"
