@@ -33,13 +33,13 @@ RUN mkdir -p /usr/share/fonts/truetype/yanonekaffeesatz \
   && wget -O /usr/share/fonts/truetype/yanonekaffeesatz/YanoneKaffeesatz-Bold.ttf "https://github.com/google/fonts/blob/master/ofl/yanonekaffeesatz/YanoneKaffeesatz-Bold.ttf?raw=true"
 
 RUN mkdir -p /usr/share/fonts/truetype/sourcecodepro \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Black.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Black.ttf?raw=true" \
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Black.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7PqtvszDs-cv.ttf" \
   && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Bold.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cv.ttf" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-ExtraLight.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-ExtraLight.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Light.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Light.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Medium.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Medium.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/sourcecodepro/SourceCodePro-Regular.ttf?raw=true" \
-  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Semibold.ttf "https://github.com/google/fonts/raw/18b5208c2a778d85c1312ec3b18b1d3b822cc51a/ofl/sourcecodepro/SourceCodePro-Semibold.ttf"
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-ExtraLight.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt8srDs-cv.ttf" \
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Light.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7PqtlsnDs-cv.ttf" \
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Medium.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7PqtzsjDs-cv.ttf" \
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Regular.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf" \
+  && wget -O /usr/share/fonts/truetype/sourcecodepro/SourceCodePro-Semibold.ttf "https://fonts.gstatic.com/s/sourcecodepro/v7/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cv.ttf"
   
 RUN mkdir -p /usr/share/fonts/truetype/parisienne \
   && wget -O /usr/share/fonts/truetype/parisienne/Parisienne-Regular.ttf "https://github.com/google/fonts/blob/master/ofl/parisienne/Parisienne-Regular.ttf?raw=true"
