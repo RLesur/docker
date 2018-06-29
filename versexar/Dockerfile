@@ -10,6 +10,11 @@ RUN apt-get update \
   gnupg1 \
   fonts-droid-fallback \
   fonts-noto \
+  # needed for Chrome:
+  fonts-liberation \
+  libappindicator3-1 \
+  libxss1:amd64 \
+  xdg-utils \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
