@@ -52,16 +52,7 @@ RUN apt-get update \
   libnss3 \
   lsb-release \
   wget \
-  libx11composite1 \
-  libx11cursor1 \
-  libx11damage1 \
-  libcups2 \
-  libxss1 \
-  libxrandr2 \
-  libpangocairo-1.0-0 \
-  libatk1.0-0 \
-  libatk-bridge2.0-0 \
-  libgtk-3-0 \
+  x11-apps \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
