@@ -234,3 +234,10 @@ RUN fc-cache -fv
 RUN wget -O google-chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" \
   && dpkg -i google-chrome.deb \
   && rm google-chrome.deb
+
+# Remove pandoc symlinks and install pandoc 2
+RUN rm /usr/local/bin/pandoc \
+  && rm /usr/local/bin/pandoc-citeproc \
+  && wget -O pandoc-2.2.1-1-amd64.deb https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb \
+  && dpkg -i pandoc-2.2.1-1-amd64.deb \
+  && rm pandoc-2.2.1-1-amd64.deb
