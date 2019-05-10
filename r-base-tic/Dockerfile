@@ -5,4 +5,5 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN install.r remotes \
-    && installGithub.r -d TRUE ropenscilabs/tic
+    && installGithub.r -d TRUE ropenscilabs/tic \
+    && -rf /tmp/downloaded_packages/ /tmp/*.rds
