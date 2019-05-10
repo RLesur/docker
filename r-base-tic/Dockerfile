@@ -1,3 +1,4 @@
 FROM r-base:3.6.0
 
-RUN installGithub.r ropenscilabs/tic
+RUN install.r remotes \
+    && installGithub.r ropenscilabs/tic
