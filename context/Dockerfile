@@ -1,6 +1,6 @@
 FROM rocker/verse:3.6.0
 
-ENV PATH=$PATH:/usr/local/context/tex/texmf-linux/bin:/usr/local/context/bin
+ENV PATH=$PATH:/usr/local/context/tex/texmf-linux-64/bin:/usr/local/context/bin
 ENV OSFONTDIR=/usr/share/fonts
 ENV TEXROOT=/usr/local/context/tex
 
